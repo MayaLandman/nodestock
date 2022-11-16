@@ -9,13 +9,10 @@ const PORT = process.env.PORT || 5000;
 app.engine('handlebars', require('exphbs'));
 app.set('view engine', 'handlebars');
 
-const pliz = "pliz taavod"
 
 
 app.get('/', (req, res) => {
-    res.render('home', {
-        stuff : pliz
-    });
+    res.render('home');
 });
 
 
